@@ -1,8 +1,9 @@
 FROM debian:stable-20170620
 
-RUN buildDeps='curl ca-certificates build-essential zlib1g-dev python cmake'; \
+RUN runDeps='curl ca-certificates procps'; \
+  buildDeps='build-essential zlib1g-dev python cmake'; \
   set -ex; \
-  apt-get update && apt-get install -y $buildDeps --no-install-recommends; \
+  apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends; \
   rm -rf /var/lib/apt/lists/*; \
   \
   mkdir /usr/src/kafkacat; \
