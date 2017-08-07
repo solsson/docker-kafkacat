@@ -12,7 +12,8 @@ RUN buildDeps='curl ca-certificates build-essential zlib1g-dev python cmake'; \
   mv ./kafkacat /usr/local/bin/; \
   \
   rm -rf /usr/src/kafkacat/tmp-bootstrap; \
-  apt-get purge -y --auto-remove $buildDeps \
-  apt autoremove
+  apt-get purge -y --auto-remove $buildDeps; \
+  apt autoremove; \
+  rm /var/log/dpkg.log /var/log/apt/*.log
 
 ENTRYPOINT ["kafkacat"]
