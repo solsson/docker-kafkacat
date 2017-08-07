@@ -1,4 +1,4 @@
-FROM debian:stable-20170620
+FROM debian:stable-20170723
 
 RUN buildDeps='curl ca-certificates build-essential zlib1g-dev python cmake'; \
   set -ex; \
