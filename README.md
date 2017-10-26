@@ -1,14 +1,11 @@
 # docker-kafkacat
 
-Dockerized [kafkcat - a generic command line non-JVM Apache Kafka producer and consumer](https://github.com/edenhill/kafkacat).
+Variations of upstream, based on https://github.com/edenhill/kafkacat/pull/110.
 
-## Build
+# [solsson/kafkacat](https://hub.docker.com/r/solsson/kafkacat)
 
-```shell
-docker build -t kafkacat .
-```
+Actually built from [solsson/kafkacat](https://github.com/solsson/kafkacat/).
 
-## Run
-```shell
-docker run --rm -it kafkacat
-```
+# [solsson/kafkacat-curl](https://hub.docker.com/r/solsson/kafkacat-curl/)
+
+Used specifically for [Yolean/kubernetes-kafka#60](https://github.com/Yolean/kubernetes-kafka/pull/60).
