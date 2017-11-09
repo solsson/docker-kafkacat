@@ -1,5 +1,5 @@
 # A build of https://github.com/edenhill/kafkacat/pull/110
-FROM solsson/kafkacat@sha256:ebebf47061300b14a4b4c2e1e4303ab29f65e4b95d34af1b14bb8f7ec6da7cef
+FROM solsson/kafkacat@sha256:b32eedf936f3cde44cd164ddc77dfcf7565a8af4e357ff6de1abe4389ca530c9
 
 RUN set -ex; \
   export DEBIAN_FRONTEND=noninteractive; \
